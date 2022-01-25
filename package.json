@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "webpack serve --mode development",
     "build-prod": "webpack --mode production",
-    "build-dev": "webpack --mode development --watch"
+    "react-dev": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
