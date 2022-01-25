@@ -17,7 +17,7 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  > 'Know thyself and you shall know the coffee taste.'
+  > 'Know thyself and you shall know the coffee taste.' - Socrates
 ## Sub-Heading ##
   > we recommend the coffee that suits you the best.
 ## Summary ##
@@ -25,7 +25,7 @@ Once the project moves into development, the press release can be used as a touc
 ## Problem ##
   > Many people does not know about their preference on coffee bean.
 ## Solution ##
-  > Our app test your preference and tendancy on coffee so that we can recommend the best suitable coffee bean for you.
+  > Our app test your preference and tendency on coffee so that we can recommend the best suitable coffee bean for you.
 ## Quote from You ##
   > This app is amazing! Using this app, I found the most suitable coffee bean for me.
 ## How to Get Started ##
