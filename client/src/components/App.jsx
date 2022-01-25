@@ -5,20 +5,20 @@ import Result from './Result.jsx';
 
 const App = () => {
   const [ state, updateState ] = useState({
-    status : 0
+    status : undefined
   });
 
   return (
     <>
-      {state.status === 0 && (
+      {state.status === undefined && (
         <Main state={state} updateState={updateState}/>
       )}
 
-      {(1 <= state.status && state.status < 6) && (
+      {(0 <= state.status && state.status < 5) && (
         <Questions state={state} updateState={updateState}/>
       )}
 
-      {(6 <= state.status) && (
+      {(5 <= state.status) && (
         <Result state={state} updateState={updateState}/>
       )}
     </>

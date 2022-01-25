@@ -27,10 +27,10 @@ Once the project moves into development, the press release can be used as a touc
 ## Solution ##
   > Our app test your preference and tendency on coffee so that we can recommend the best suitable coffee bean for you.
 ## Quote from You ##
-  > This app is amazing! Using this app, I found the most suitable coffee bean for me.
+  > "This app is amazing! Using this app, I found the most suitable coffee bean for me."
 ## How to Get Started ##
   > This is very easy app to use. After you answer for some quetions, we would display the result.
 ## Customer Quote ##
-  > 'I finally found the most suitable coffee bean for me!'
+  > 'I finally found the most suitable coffee bean for me!' - unknown user -
 ## Closing and Call to Action ##
   > Don't drink your coffee for the caffeine but for the taste!
