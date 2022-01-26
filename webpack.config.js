@@ -4,7 +4,7 @@ var SRC_DIR = path.join(__dirname, '/client/src');
 var DIST_DIR = path.join(__dirname, '/client/dist');
 
 const config = {
-  entry: `${SRC_DIR}/index.jsx`,
+  entry: `${SRC_DIR}/index.js`,
   output: {
     filename: 'index.bundle.js',
     path: DIST_DIR
