@@ -30,8 +30,10 @@ const Questions = ( {state, updateState} ) => {
   const handlePrevious = (event) => {
     event.preventDefault();
     const currentQuestion = state.status;
+    const userLastSelection = state.userAnswer[state.userAnswer.length - 1];
 
     if (state.status !== 0) {
+      document.getElementById(userLastSelection).checked = true;
       updateState((preValues) => {
         return {...preValues,
           status: currentQuestion - 1};
