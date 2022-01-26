@@ -6,13 +6,15 @@ const Main = ( {state, updateState} ) => {
     updateState((preValues) => {
       return {...preValues, status: 0}
     });
-
   }
 
   return (
     <div id='mainPage'>
-      <div id='title'>Coffee-Amazon</div>
+      <div id='title'>
+        <p>COFFEE MATCH</p>
+      </div>
       <div id='mainCoffeeBean'>
+        <div id='subTitle'>WELCOME TO COFFEE MATCH</div>
         There are 3 main types of coffee beans.<br></br><br></br>
         <b>Liberica</b>: Liberica is a low yield type of coffee compared to Arabica and Robusta.<br></br>
         <b>Robusta</b>: This type of coffee, which contains 2.5% more caffeine than other types, has a pretty strong taste.<br></br>
@@ -20,7 +22,7 @@ const Main = ( {state, updateState} ) => {
         <br></br>
         There are different types of coffee beans from different countries and their characteristics!
       </div>
-      <div id='subTitle'>'Know thyself and you shall know the coffee taste.'</div>
+      <div id='startMessage'>'With a short quiz, you will find the coffees that will be beautiful to you.'</div>
       <button onClick={handleStart}>Start</button>
     </div>
   )

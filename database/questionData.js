@@ -1,6 +1,6 @@
 module.exports = {
   questionData: [
-                {id: 0, question: 'Whick kind of chocolate do you prefer?', answer: [
+                {id: 0, question: 'Which kind of chocolate do you prefer?', answer: [
                   'White', 'Dark', 'Bittersweet chocolate', 'Milk', "I don't like chocolate"
                 ]},
                 {id: 1, question: 'How do you take your coffee?', answer: [
@@ -10,7 +10,7 @@ module.exports = {
                   'Juicy', 'Heavy', 'Syrupy', 'Delicate', 'Light'
                 ]},
                 {id: 3, question: 'Which flavors do you most enjoy in your coffee?', answer: [
-                  'Brown Sugar', 'Chocolatey', 'Citrus', 'Cherry', 'Uganda'
+                  'Brown Sugar', 'Chocolatey', 'Citrus', 'Black-Cherry', 'Red-Cherry'
                 ]},
                 {id: 4, question: "What's the coffee drinks that you consume most often?", answer: [
                   'Cappucino', 'Americano', 'Caffe Latte', 'Cold Brew', 'Expresso'

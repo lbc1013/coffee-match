@@ -3,20 +3,25 @@ import Main from './Main.jsx';
 import Questions from './Questions.jsx';
 import Result from './Result.jsx';
 import axios from 'axios';
+import questiondb from '/database/questionData';
 
 const App = () => {
   const [ state, updateState ] = useState({
     status : undefined,
-    resultData : null
+    questionData: {},
+    resultData: null,
+    userAnswer: '',
+    finalResult: null
   });
 
   useEffect (() => {
     axios.get('/coffee')
       .then ((res) => {
-        const resultForUser = res.data;
         if (state.resultData === null) {
           updateState((preValues) => {
-            return {...preValues, resultData: resultForUser};
+            return {...preValues,
+              resultData: res.data,
+              questionData: questiondb.questionData};
           });
         }
       })

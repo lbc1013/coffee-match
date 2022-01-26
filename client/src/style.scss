@@ -1,33 +1,112 @@
 #body {
-
+  font-family: saira;
 }
 
 #mainPage, #questionSection, #resultSection {
+  font-family: saira;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+#resultSection {
+  #questionBox {
+    align-items: center;
+  }
+
+  #coffeeImage {
+    width: 250px;
+    height: 200px;
+  }
+}
+
 #title {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50%;
-  border: solid 1px black;
-  margin-top: 10px;
+  align-items: CENTER;
+  height: 65px;
+  width: 100%;
+  background-color: #143438;
+  color: #FFFDF8;
+  font-size: 24px;
+
+  p {
+    font-family: saira;
+    margin-left: 20px;
+    font-weight: bold;
+  }
 }
 
 #mainCoffeeBean {
-  margin-top: 100px;
-  width: 50%;
+  margin-top: 50px;
+  width: 65%;
   margin-bottom: 100px;
 }
 
 #questionBox {
   display: flex;
+  flex-direction: column;
   height: 375px;
   width: 75%;
   border: solid 1px black;
   margin-top: 50px;
+
+  #question {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+  }
+}
+
+#answerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  margin-left: 380px;
+  margin-bottom: 50px;
+}
+
+#arrow {
+  margin-inline-start: auto;
+  margin-right: 45px;
+}
+
+#subTitle {
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.answer {
+  margin-right: 15px;
+}
+
+button, #previous, #arrow {
+  width: 200px;
+  height: 70px;
+  background-color: #FFD277;
+  border-radius: 20px;
+  border: none;
+  font-size: 24px;
+  filter: drop-shadow(0px 5px 10px #14343831);
+}
+
+#arrow, #previous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#arrow:hover {
+  cursor: pointer;
+}
+
+#startMessage {
+  margin-bottom: 20px;
 }
