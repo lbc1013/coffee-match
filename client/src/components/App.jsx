@@ -18,14 +18,19 @@ const App = () => {
     axios.get('/coffee')
       .then ((res) => {
         if (state.resultData === null) {
+          let dbData = {};
+          for (let i = 0; i < res.data.length; i++) {
+            dbData[res.data[i].resultId] = res.data[i];
+          }
+
           updateState((preValues) => {
             return {...preValues,
-              resultData: res.data,
+              resultData: dbData,
               questionData: questiondb.questionData};
           });
         }
       })
-  })
+  }, [])
 
   return (
     <>

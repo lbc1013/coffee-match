@@ -9,8 +9,8 @@ const Questions = ( {state, updateState} ) => {
       if (eachAnswer) {
         updateState((preValues) => {
           return {...preValues,
-            status: currentQuestion + 1,
-            userAnswer: state.userAnswer + i};
+            status: currentQuestion + 1
+          };
         });
         document.getElementById(i).checked = false;
       }
@@ -19,19 +19,29 @@ const Questions = ( {state, updateState} ) => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    const clickedId = event.target.id;
-    if (!document.getElementById(clickedId[0]).checked) {
-      document.getElementById(clickedId[0]).checked = true;
+    const clickedId = event.target.id[0];
+    if (!document.getElementById(clickedId).checked) {
+      document.getElementById(clickedId).checked = true;
+      updateState((preValues) => {
+        return {...preValues,
+          userAnswer: state.userAnswer + clickedId};
+      });
     } else {
-      document.getElementById(clickedId[0]).checked = false;
+      document.getElementById(clickedId).checked = false;
+      updateState((preValues) => {
+        return {...preValues,
+          userAnswer: state.userAnswer.substring(0, state.userAnswer.length - 1)};
+      });
     }
   }
 
   const handlePrevious = (event) => {
     event.preventDefault();
     const currentQuestion = state.status;
+    const userLastSelection = state.userAnswer[state.userAnswer.length - 1];
 
     if (state.status !== 0) {
+      document.getElementById(userLastSelection).checked = true;
       updateState((preValues) => {
         return {...preValues,
           status: currentQuestion - 1};
@@ -48,15 +58,15 @@ const Questions = ( {state, updateState} ) => {
 
   return (
         <div id='questionSection'>
-          <div onClick={handleMainLogo} id='title'>
-            <p>COFFEE MATCH</p>
+          <div id='title'>
+            <p onClick={handleMainLogo}>COFFEE MATCH</p>
           </div>
           <div id='questionBox'>
             <div id='questionNumber'>QUESTION {state.status + 1} OUT OF 5</div>
             <div id='question'>{state.questionData[state.status].question}</div>
             <div id='answerSection'>
             {state.questionData[state.status].answer.map((element, index) => {
-              return <div onClick={handleClick} id={index + 'answer'} key={index}> <input type='checkbox' className='answer' id={index}/>{element}</div>
+              return <div onClick={handleClick} className = 'userAnswer' id={index + 'answer'} key={index}> <input type='checkbox' className='answer' id={index}/>{element}</div>
             })}
             </div>
             <div id='arrowButton'>

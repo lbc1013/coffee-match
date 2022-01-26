@@ -10,13 +10,58 @@
 }
 
 #resultSection {
-  #questionBox {
+  #resultBox {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 75%;
+    margin-top: 40px;
   }
 
   #coffeeImage {
     width: 250px;
     height: 200px;
+  }
+
+  #mainMessage {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #143438;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  #description {
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  #coffeeName {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #143438;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  #tryButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 45px;
+    width: 160px;
+    border: 1px white;
+    border-radius: 10px;
+    background-color: #FFD277;
+    filter: drop-shadow(0px 5px 10px #143438d7);
+    font-family: saira;
+    font-size: medium;
+    cursor: pointer;
   }
 }
 
@@ -28,12 +73,12 @@
   background-color: #143438;
   color: #FFFDF8;
   font-size: 24px;
-  cursor: pointer;
 
   p {
     font-family: saira;
     margin-left: 20px;
     font-weight: bold;
+    cursor: pointer;
   }
 }
 
@@ -45,9 +90,27 @@
 }
 
 #mainCoffeeBean {
-  margin-top: 50px;
-  width: 65%;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  width: 75%;
+  margin-bottom: 20px;
+
+  #coffeeCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+  }
+
+  #liberica, #robusta, #arabica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 28%;
+    height: 100%;
+    background-color: #f9f5ece3;
+    filter: drop-shadow(0px 5px 5px #14343825);
+  }
 }
 
 #questionBox {
@@ -55,7 +118,7 @@
   flex-direction: column;
   height: 500px;
   width: 75%;
-  margin-top: 50px;
+  margin-top: 40px;
   border: solid 1px white;
   border-radius: 20px;
   filter: drop-shadow(0px 5px 5px #143438d7);
@@ -93,8 +156,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
-  margin-left: 380px;
-  margin-bottom: 50px;
+  width: 30%;
+  margin: auto;
 }
 
 #arrow {
@@ -141,6 +204,7 @@ button, #previous, #next {
 #arrowButton {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
   margin-bottom: 20px;
 
   #next {
@@ -174,5 +238,32 @@ button:hover {
 }
 
 #startMessage {
+  margin-bottom: 20px;
+}
+
+.userAnswer {
+  cursor: pointer;
+}
+
+#mainIcon {
+  width: 60px;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#mainIconDescription {
+  width: 80%;
+  height: 65%;
+  margin-bottom: 5px;
+}
+
+#mainIconName {
+  height: 10%;
+  font-size: 25px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
