@@ -56,7 +56,7 @@ const Questions = ( {state, updateState} ) => {
             <div id='question'>{state.questionData[state.status].question}</div>
             <div id='answerSection'>
             {state.questionData[state.status].answer.map((element, index) => {
-              return <div onClick={handleClick} id={index + 'answer'} key={index}> <input type='checkbox' className='answer' id={index}/>{element}</div>
+              return <div onClick={handleClick} className = 'userAnswer' id={index + 'answer'} key={index}> <input type='checkbox' className='answer' id={index}/>{element}</div>
             })}
             </div>
             <div id='arrowButton'>
