@@ -9,8 +9,8 @@ const Questions = ( {state, updateState} ) => {
       if (eachAnswer) {
         updateState((preValues) => {
           return {...preValues,
-            status: currentQuestion + 1,
-            userAnswer: state.userAnswer + i};
+            status: currentQuestion + 1
+          };
         });
         document.getElementById(i).checked = false;
       }
@@ -19,11 +19,19 @@ const Questions = ( {state, updateState} ) => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    const clickedId = event.target.id;
-    if (!document.getElementById(clickedId[0]).checked) {
-      document.getElementById(clickedId[0]).checked = true;
+    const clickedId = event.target.id[0];
+    if (!document.getElementById(clickedId).checked) {
+      document.getElementById(clickedId).checked = true;
+      updateState((preValues) => {
+        return {...preValues,
+          userAnswer: state.userAnswer + clickedId};
+      });
     } else {
-      document.getElementById(clickedId[0]).checked = false;
+      document.getElementById(clickedId).checked = false;
+      updateState((preValues) => {
+        return {...preValues,
+          userAnswer: state.userAnswer.substring(0, state.userAnswer.length - 1)};
+      });
     }
   }
 
