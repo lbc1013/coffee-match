@@ -17,10 +17,17 @@ const Result = ( {state, updateState} ) => {
     });
   }, state.finalResult)
 
+  const handleMainLogo = () => {
+    console.log('hi')
+    updateState((preValues) => {
+      return {...preValues, status: undefined}
+    });
+  }
+
   return (
     <>
       <div id='resultSection'>
-        <div id='title'>
+        <div onClick={handleMainLogo} id='title'>
           <p>COFFEE MATCH</p>
         </div>
         {state.finalResult !== null && (

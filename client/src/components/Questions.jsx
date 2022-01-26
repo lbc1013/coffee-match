@@ -39,27 +39,37 @@ const Questions = ( {state, updateState} ) => {
     }
   }
 
+  const handleMainLogo = () => {
+    console.log('hi')
+    updateState((preValues) => {
+      return {...preValues, status: undefined}
+    });
+  }
+
   return (
         <div id='questionSection'>
-          <div id='title'>
+          <div onClick={handleMainLogo} id='title'>
             <p>COFFEE MATCH</p>
           </div>
           <div id='questionBox'>
+            <div id='questionNumber'>QUESTION {state.status + 1} OUT OF 5</div>
             <div id='question'>{state.questionData[state.status].question}</div>
             <div id='answerSection'>
             {state.questionData[state.status].answer.map((element, index) => {
               return <div onClick={handleClick} id={index + 'answer'} key={index}> <input type='checkbox' className='answer' id={index}/>{element}</div>
             })}
             </div>
+            <div id='arrowButton'>
             {state.status > 0 && (
               <div onClick={handlePrevious} id='previous'>PREVIOUS</div>
             )}
             {state.status < 4 && (
-              <div onClick={handleNext} id='arrow'>NEXT</div>
+              <div onClick={handleNext} id='next'>NEXT</div>
             )}
             {state.status === 4 && (
-              <div onClick={handleNext} id='arrow'>MATCH MY COFFEE</div>
+              <div onClick={handleNext} id='lastButton'>MATCH MY COFFEE</div>
             )}
+            </div>
           </div>
         </div>
       )
