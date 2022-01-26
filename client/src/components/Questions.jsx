@@ -58,8 +58,8 @@ const Questions = ( {state, updateState} ) => {
 
   return (
         <div id='questionSection'>
-          <div onClick={handleMainLogo} id='title'>
-            <p>COFFEE MATCH</p>
+          <div id='title'>
+            <p onClick={handleMainLogo}>COFFEE MATCH</p>
           </div>
           <div id='questionBox'>
             <div id='questionNumber'>QUESTION {state.status + 1} OUT OF 5</div>

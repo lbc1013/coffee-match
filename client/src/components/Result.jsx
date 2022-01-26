@@ -27,8 +27,8 @@ const Result = ( {state, updateState} ) => {
   return (
     <>
       <div id='resultSection'>
-        <div onClick={handleMainLogo} id='title'>
-          <p>COFFEE MATCH</p>
+        <div id='title'>
+          <p onClick={handleMainLogo}>COFFEE MATCH</p>
         </div>
         {state.finalResult !== null && (
           <div id='questionBox'>

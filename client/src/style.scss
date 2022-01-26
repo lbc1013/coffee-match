@@ -28,12 +28,13 @@
   background-color: #143438;
   color: #FFFDF8;
   font-size: 24px;
-  cursor: pointer;
 
   p {
     font-family: saira;
     margin-left: 20px;
     font-weight: bold;
+    cursor: pointer;
+
   }
 }
 
@@ -93,8 +94,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
-  margin-left: 380px;
-  margin-bottom: 50px;
+  width: 30%;
+  margin: auto;
 }
 
 #arrow {
