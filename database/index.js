@@ -38,11 +38,11 @@ exports.getResultData = () => {
 }
 
 
-Coffee.findOneAndUpdate({resultId: 4}, {description: 'A good brewed cup of Bugisu (or "Bugishu") coffee exhibits cupping notes similar to the desirably winey acidity of a fine East African coffee, with sweet chocolate flavor and rich texture. Generally speaking, the lower complexity and lighter lighter body of Ugandan coffees makes them generally less distinguished than the finer coffees of neighboring Zimbabwe, Tanzania, or Kenya.'}, (err, result) => {
-  if(err) {
-    console.log(err);
-  } else {
-    console.log('well updated');
-  }
-});
+// Coffee.findOneAndUpdate({resultId: 4}, {description: 'A good brewed cup of Bugisu (or "Bugishu") coffee exhibits cupping notes similar to the desirably winey acidity of a fine East African coffee, with sweet chocolate flavor and rich texture. Generally speaking, the lower complexity and lighter lighter body of Ugandan coffees makes them generally less distinguished than the finer coffees of neighboring Zimbabwe, Tanzania, or Kenya.'}, (err, result) => {
+//   if(err) {
+//     console.log(err);
+//   } else {
+//     console.log('well updated');
+//   }
+// });
 
