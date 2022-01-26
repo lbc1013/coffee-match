@@ -25,6 +25,19 @@ const coffeeSchema = new Schema ({
 //model cretae
 const Coffee = mongoose.model('Coffee', coffeeSchema);
 
+exports.getResultData = () => {
+  return new Promise ((resolve, reject) => {
+    Coffee.find ({}, (err, result) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    })
+  })
+}
+
+
 //insert data into db
 // Coffee.create({
 //   resultId: 3,
