@@ -1,7 +1,7 @@
 # Coffee-Match #
 "I finally found the most suitable coffee bean for me!" - unknown user -
 
-![Coffee-Match Demo](./asset/demo-coffee.gif)
+![Coffee-Match Demo](https://media1.giphy.com/media/VwFjQVilata73QkGBz/giphy.gif?cid=790b7611c1b25c76d170a7083940fdeedd84dbe0a5d5a1c3&rid=giphy.gif&ct=g)
 # Project Overview
 - This MVP project was built solo at Hack Reactor in 2 days, Jan 25-26 2022.
 - This app allows user to find the most suitable coffee bean for them based on the survey.
