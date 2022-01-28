@@ -1,5 +1,5 @@
 # Coffee-Match #
-'I finally found the most suitable coffee bean for me!' - unknown user -
+"I finally found the most suitable coffee bean for me!" - unknown user -
 
 ![Coffee-Match Demo](./asset/demo-coffee.gif)
 # Project Overview
@@ -10,8 +10,9 @@
 
 ## Solution ##
 - This app takes a survey from the user and recommend the most suitable coffee bean for the user.
-.
+
 ## How to Get Started ##
+
 ```bash
 1.  npm install
 2.  npm run build-prod
