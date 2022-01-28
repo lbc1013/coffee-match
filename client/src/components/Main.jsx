@@ -23,12 +23,12 @@ const Main = ( {state, updateState} ) => {
             <div id='mainIconDescription'>Liberica is definitely one of the sweetest coffee on earth. Absolutely flavorful, thick jammy juiciness and intense sweetness!</div>
           </div>
           <div id='robusta'>
-            <img id='mainIcon' src='https://cdn-icons.flaticon.com/png/512/3071/premium/3071581.png?token=exp=1643235031~hmac=ca764e4f24dc827d343289f8b7d0b066'></img>
+            <img id='mainIcon' src='https://cdn-icons-png.flaticon.com/512/751/751621.png'></img>
             <div id='mainIconName'>Robusta</div>
             <div id='mainIconDescription'>Robusta contains 2.5% more caffeine than other types, has a pretty strong taste.</div>
           </div>
           <div id='arabica'>
-            <img id='mainIcon' src='https://cdn-icons.flaticon.com/png/512/3105/premium/3105165.png?token=exp=1643235260~hmac=17aa0c70cb50eb1e44854ae2d8f316c2'></img>
+            <img id='mainIcon' src='https://cdn-icons.flaticon.com/png/512/3105/premium/3105123.png?token=exp=1643339834~hmac=136bb89a69847f50d6fce402669b331a'></img>
             <div id='mainIconName'>Arabica</div>
             <div id='mainIconDescription'>Arabica is aromatic and delicious with a smoother taste. 80% of the coffee in the world is produced from these types of beans.</div>
           </div>
