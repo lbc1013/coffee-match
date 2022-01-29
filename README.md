@@ -1,5 +1,5 @@
 # Coffee-Match #
-### This app allows user to find the right coffee bean that suits their taste.
+### This app allows user to find the right coffee bean that suits their taste based on the survey.
 
 "I finally found the best coffee bean that matches my taste!" - unknown user -
 
